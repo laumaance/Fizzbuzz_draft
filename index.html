@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script defer src="scripts/javascripts.js"></script>
+  <link rel="stylesheet" href="Styles/stylesheet.css"></script>
+
+  <title>Homework 3</title>
+</head>
+
+<body data-gr-c-s-loaded="true">
+    <h1>LET'S PLAY FIZZBUZZ!</h1>
+  <main id="container">
+      <div id="ColourContainer">
+          <h3>Fizz Colour:</h3>
+          <input id="FizzColour" type="color" value="#f0d83e">
+          <h3>Buzz Colour:</h3>
+          <input id="BuzzColour" type="color" value="#20b1fa">
+          <h3>FizzBuzz Colour:</h3>
+          <input id="FizzBuzzColour" type="color" value="#039c33">
+          <h3>Base Colour</h3>
+          <input id="BaseColour" type="color" value="#7a7d80">
+    </div>
+      <div id="NavigatorContainer">
+        <h3>Start value :</h3>
+        <input type="number" name="field" id="MinInput" min="1" max="99" onpaste="return false">
+        <h3>End value :</h3>
+        <input type="number" name="field" id="MaxInput" min="2" max="100" onpaste="return false">
+        <h3>Fizz value :</h3>
+        <input id="fizzValue" type="number" value="3">
+        <h3>Buzz value :</h3>
+        <input id="buzzValue" type="number" value="5">
+    </div>
+    <div id="MenuContainer">
+        <button type="submit" id="FizzBtn">FIZZ</button>
+        <button type="submit" id="BuzzBtn">BUZZ</button>
+        <button type="submit" id="FizzBuzzBtn">FIZZBUZZ</button>
+        <button type="submit" id="RefreshBtn">REFRESH</button>
+        <button type="submit" id="ResetBtn">RESET</button>
+    </div>
+    <div id="FizzBuzzContainers"></div>
+  </main>
+</body>
+</html>
