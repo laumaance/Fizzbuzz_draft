@@ -48,6 +48,7 @@ main h3{
     }
 
     .NavigatorContainer {
+        grid-template-columns: 1fr 1fr;
         width: 100%;
         min-height: 400px;
         flex-wrap: wrap;
@@ -153,7 +154,7 @@ main h3{
         #FizzBtn {
             background-color: #77da4994; 
             color: whitesmoke; 
-            border: 5px #4f8a3386;
+            border: 5px solid #4f8a3386;
         }
             
         #BuzzBtn {
@@ -163,9 +164,9 @@ main h3{
         }
             
         #FizzBuzzBtn {
-            background-color: #008CBA; 
+            background-color: #ffa632c5; 
             color: whitesmoke; 
-            border: 5px solid#008CBA;
+            border: 5px solid#a06d2aa8;
         }
             
         #RefreshBtn{
