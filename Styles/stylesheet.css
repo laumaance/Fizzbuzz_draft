@@ -154,31 +154,33 @@ main h3{
         #FizzBtn {
             background-color: #77da4994; 
             color: whitesmoke; 
-            border: 5px solid #4f8a3386;
+            border: 3px solid #4f8a3386;
         }
             
         #BuzzBtn {
             background-color: #5f83e4cb;
             color: whitesmoke;
-            border: 5px solid #465fa59f;
+            border: 3px solid #465fa59f;
         }
             
         #FizzBuzzBtn {
             background-color: #ffa632c5; 
             color: whitesmoke; 
-            border: 5px solid#a06d2aa8;
+            border: 3px solid#a06d2aa8;
         }
             
         #RefreshBtn{
             background-color: #febf04;
             color: whitesmoke;
-            border: 5px solid #febf04;
+            border: 5px solid #70550477;
+            font-weight: bold;
         }
             
         #ResetBtn {
             background-color: #008CBA; 
             color: whitesmoke; 
-            border: 5px solid#008CBA;
+            border: 5px solid#0541558a;
+            font-weight: bold;
         }
 .hidden {
     display: none;
