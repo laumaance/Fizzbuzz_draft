@@ -151,9 +151,9 @@ main h3{
         }
 
         #FizzBtn {
-            background-color: #008CBA; 
+            background-color: #77da4994; 
             color: whitesmoke; 
-            border: 5px solid#008CBA;
+            border: 5px #4f8a3386;
         }
             
         #BuzzBtn {
