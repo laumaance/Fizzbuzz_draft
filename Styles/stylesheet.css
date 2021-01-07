@@ -1,69 +1,143 @@
+/* html */
+
 html {
     margin: auto;
     padding: 10px;
     
 }
 
+/*body*/
+
 body {
     font-family: 'Courier New', monospace;
     font-weight: bold;
-    background-color: rgb(212, 209, 209);
+    background-color: whitesmoke;
  
 }
 
-main h1{
+/*h1*/
+body h1{
     text-align: center;
     font-size: 2em;
 }
 
+/*h3*/
 main h3{
     display:inline;
     font-size: 16px;
     font-weight: 100;
 }
 
-
-#container{
-width: 1200px;
-height: 100%;
-margin: 0 auto;
-background-color: rgb(153, 153, 153);
+/*FizzBuzzContainers*/
+#FizzBuzzContainers{
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px;
+    grid-template-rows: 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px;
+    grid-template-areas: ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . .";   
 }
 
-#container p {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  
-}
+/*@media*/
 
 @media (max-width: 576px) {
     #container {
         grid-template-columns: 1fr 1fr;
+        width: 300px;
+        height: 100%;
+        margin : 0 auto;
+        background-color: whitesmoke;
     }
 
-    .navContainer {
+    .NavigatorContainer {
         width: 100%;
         min-height: 400px;
         flex-wrap: wrap;
         flex-direction: column;
     }
+ 
 }  
 
-/*Containers*/
-#ColourContainer {
-    background-color: rgb(230, 230, 230);
+
+/*fizbuz class*/
+.fizbuz {
+    display: grid;
+    width: 90px;
+    height:90px;
+    margin:10px;
+    color:whitesmoke;
+    background-color: #ffa632c5;
+    border-radius:8px;
+    border-style:solid;
+    border-width:1px;
+    border-color:#a06d2aa8;
+    text-align:center;
+}
+
+/*fiz class*/
+.fiz{
+    display: grid;
+    width: 90px;
+    height:90px;
+    margin:10px;
+    color:whitesmoke;
+    background-color: #77da4994;
+    border-radius:8px;
+    border-style:solid;
+    border-width:1px;
+    border-color:#4f8a3386;
+    text-align:center;
+}
+
+/*buz class*/
+.buz{
+    display: grid;
+    width: 90px;
+    height:90px;
+    margin:10px;
+    color:whitesmoke;
+    background-color: #5f83e4cb;
+    border-radius:8px;
+    border-style:solid;
+    border-width:1px;
+    border-color:#465fa59f;
+    text-align:center;
+}
+
+/*num class*/
+.num{
+    display: grid;
+    width: 90px;
+    height:90px;
+    margin:10px;
+    color:whitesmoke;
+    background-color: rgba(175, 159, 159, 0.685);
+    border-radius:8px;
+    border-style:solid;
+    border-width:1px;
+    border-color:rgba(59, 57, 57, 0.61);
+    text-align:center;
+}
+
+/*ColourContainer*/
+#ColourContainer{
+    background-color: #424344;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-/*Navigators*/
-#NavigatorContainer{
-    background-color: rgb(230, 230, 230);
-    padding-top: 10px;
-    padding-bottom: 10px;
+/*!!!!!NavigatorContainer*/
+.NavigatorContainer{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #424344;
+    font-size: 1.5em;
+    border-radius: 4px;
 }
-/*Buttons*/
+
+/*MenuContainer*/
     input, button {
         font-size: 1em;
         border-radius: 5px;
@@ -71,62 +145,41 @@ background-color: rgb(153, 153, 153);
         text-align: center;
     }
 
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        }
 
-    #Fizzbtn {
-        background-color: #008CBA; 
-        color: whitesmoke; 
-        border: 5px solid#008CBA;
-    }
-        
-    #BuzzBtn {
-        background-color: #febf04;
-        color: whitesmoke;
-        border: 5px solid #febf04;
-    }
-        
-    #FizzBuzzBtn {
-        background-color: #008CBA; 
-        color: whitesmoke; 
-        border: 5px solid#008CBA;
-    }
-        
-    #Refreshbtn{
-        background-color: #febf04;
-        color: whitesmoke;
-        border: 5px solid #febf04;
-    }
-        
-    #Resetbtn {
-        background-color: #008CBA; 
-        color: whitesmoke; 
-        border: 5px solid#008CBA;
-    }
-    
-#FizzBuzzContainers{
-    margin-top: 2%;
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr) ) ;
-    grid-gap: 10px;
-    align-content: center;
-    justify-items: center;    
+        #FizzBtn {
+            background-color: #008CBA; 
+            color: whitesmoke; 
+            border: 5px solid#008CBA;
+        }
+            
+        #BuzzBtn {
+            background-color: #febf04;
+            color: whitesmoke;
+            border: 5px solid #febf04;
+        }
+            
+        #FizzBuzzBtn {
+            background-color: #008CBA; 
+            color: whitesmoke; 
+            border: 5px solid#008CBA;
+        }
+            
+        #RefreshBtn{
+            background-color: #febf04;
+            color: whitesmoke;
+            border: 5px solid #febf04;
+        }
+            
+        #ResetBtn {
+            background-color: #008CBA; 
+            color: whitesmoke; 
+            border: 5px solid#008CBA;
+        }
+.hidden {
+    display: none;
+
 }
-    
-#FizzBuzzContainers p {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-/*Num Class*/
-
-/*Fiz Class*/
-
-/*Buz Class*/
-
-/*FizBuz Class*/
