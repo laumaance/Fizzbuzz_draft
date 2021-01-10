@@ -4,11 +4,11 @@ const RefreshBtn = document.getElementById("RefreshBtn");
 const ResetBtn = document.getElementById("ResetBtn");
 const main = document.getElementById("FizzBuzzContainers");
 console.log("Hello world!");
-// starting value on page refresh.
+
 inputMin.value = 1;
 inputMax.value = 100;
 
-const create = function () {            //Creating function that will generate 100 divs.
+const create = function () {            //generate 100 divs.
     while (main.firstChild) {
         main.removeChild(main.firstChild);
     };
@@ -26,19 +26,19 @@ const create = function () {            //Creating function that will generate 1
 //         console.log(i);
 // }
 for (let i = 1; i < 101; i++) {     
-    // for( i = inputMin.value; i <= inputMax.value; i++ ) { // <--- 'UNcomment' this line to create divs according to input values.
         let newDiv = document.createElement("div");
         let newPar = document.createElement("p");
 
         newDiv.appendChild(newPar);
-        main.appendChild(newDiv).setAttribute("id", "div#" + i);    // giving "id" name to every div
+        // giving "id" name
+        main.appendChild(newDiv).setAttribute("id", "div#" + i);    
 
         if (i < inputMin.value || i > inputMax.value) {
             newDiv.style = "display: none";
         } else {
             if (i % 15 === 0) {                              
                 newPar.appendChild(document.createTextNode(i + ' = FIZZ BUZZ'));
-                main.appendChild(newDiv).setAttribute("class", "fizbuz");   // this adds class to divs
+                main.appendChild(newDiv).setAttribute("class", "fizbuz");   
 
             } else if (i % 3 === 0) {
                 newPar.appendChild(document.createTextNode(i + ' = FIZZ'));
@@ -59,7 +59,7 @@ for (let i = 1; i < 101; i++) {
 create();
 
 
-//This adds event to first INPUT - sets min value.
+//set min value
 
 inputMin.onkeyup = function (e) {
     this.value = inputMin.value.replace(/^(0*)/, "");
@@ -80,7 +80,7 @@ inputMin.onkeyup = function (e) {
     create();
 };
 
-//This adds event to second INPUT - sets max value.
+//set max value
 
 inputMax.onkeyup = function (e) {
     this.value = inputMax.value.replace(/^(0*)/, "");
@@ -101,13 +101,6 @@ inputMax.onkeyup = function (e) {
     }
     create();
 };
-
-
-
-
-
-
-
 
 RefreshBtn.onclick = function() {
     inputMin.value = "";
